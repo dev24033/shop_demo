@@ -1,0 +1,1 @@
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');include_once APPPATH.'/third_party/xboxapi/xboxapi.php';use \OpenXBL\Api; class Xboxapi{        public function __construct(){                           $xbox = new Api('ws844s04kco40skogwws0gk8w440sk44gcg');                        print $xbox->get('/account');        }}?>
